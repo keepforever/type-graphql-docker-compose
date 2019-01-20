@@ -1,0 +1,42 @@
+query MeQuery {
+    me {
+        id
+        firstName
+        lastName
+        email
+        name
+    }
+}
+
+
+mutation MyRegister {
+  register(
+    data: { 
+      password: "a", 
+      email: "a@a.com", 
+      firstName: "a", 
+      lastName: "a" 
+    }
+  ) {
+    id
+    name
+  }
+}
+
+
+mutation MyLogin {
+    login(password: "a", email: "a") {
+        name
+        id
+        firstName
+        email
+    }
+}
+
+query MyHelloQuery {
+    hello
+}
+
+query MyGoodbyeQuery {
+    goodbye
+}

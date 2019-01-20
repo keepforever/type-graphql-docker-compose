@@ -1,0 +1,12 @@
+{
+    "name": "default",
+    "type": "postgres",
+    "host": "db",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "typegraphql-example",
+    "synchronize": true,
+    "logging": true,
+    "entities": ["dist/entity/*.*"]
+}
